@@ -1,209 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skips Institute</title>
+    <title>SKIPS Institute</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: grey; 
+            color: black;
+        }
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+        nav {
+            background: #0a0f1c;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #1e90ff;
+        }
 
-body {
-  background: linear-gradient(135deg, #1e1e2f, #3a3a70);
-  color: #fff;
-}
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-/* NAVBAR */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
-}
+        nav a:hover {
+            color: #1e90ff;
+        }
 
-header h1 {
-  font-weight: 600;
-}
+        header {
+            background: linear-gradient(to right, #0f2a4d, #1e90ff);
+            color: white; /* improved visibility */
+            text-align: center;
+            padding: 70px 20px;
+        }
 
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  transition: 0.3s;
-}
+        section {
+            background: rgba(255, 255, 255, 0.7); /* lighter for grey bg */
+            margin: 25px;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #1e90ff;
+        }
 
-nav a:hover {
-  color: #00f7ff;
-}
+        h1, h2, p, li, label {
+            font-weight: bold;
+        }
 
-/* SECTIONS */
-section {
-  padding: 60px 10%;
-  min-height: 100vh;
-}
+        h1, h2 {
+            color: #1e90ff;
+        }
 
-/* GLASS CARD */
-.card {
-  background: rgba(255,255,255,0.1);
-  padding: 30px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
+        .card {
+            background: rgba(30, 144, 255, 0.15);
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border-left: 4px solid #1e90ff;
+        }
 
-/* HOME */
-#home h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
+        footer {
+            background: #0a0f1c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-top: 2px solid #1e90ff;
+        }
 
-ul {
-  margin-top: 15px;
-}
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            font-weight: bold;
+        }
 
-ul li {
-  margin: 10px 0;
-}
+        button {
+            background: #1e90ff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
 
-/* COURSES GRID */
-.courses {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-  gap: 20px;
-}
+        button:hover {
+            background: #0f5fbf;
+        }
+    </style>
 
-.course-box {
-  padding: 20px;
-  border-radius: 10px;
-  background: rgba(255,255,255,0.15);
-  text-align: center;
-  transition: 0.3s;
-}
-
-.course-box:hover {
-  transform: scale(1.05);
-  background: rgba(0,247,255,0.3);
-}
-
-/* FORM */
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 8px;
-  outline: none;
-}
-
-button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  border: none;
-  background: #00f7ff;
-  color: black;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button:hover {
-  background: #00c2cc;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(255,255,255,0.1);
-  margin-top: 40px;
-}
-</style>
 </head>
-
 <body>
 
-<header>
-  <h1>Skips Institute</h1>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#courses">Courses</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#courses">COURSES</a>
+    <a href="#contact">CONTACT</a>
+</nav>
+
+<header id="home">
+    <h1>SKIPS INSTITUTE</h1>
+    <p>EMPOWERING STUDENTS WITH SKILLS FOR THE FUTURE 🚀</p>
 </header>
 
-<!-- HOME -->
-<section id="home">
-  <div class="card">
-    <h2>Welcome to Our Institute</h2>
-    <p>Build your future with industry-level skills.</p>
-
-    <ul>
-      <li>Expert Faculty</li>
-      <li>Modern Labs</li>
-      <li>100% Placements</li>
-    </ul>
-  </div>
+<section>
+    <h2>WHY CHOOSE BRIGHTPATH?</h2>
+    <div class="card">✔ EXPERIENCED FACULTY WITH DEEP INDUSTRY KNOWLEDGE</div>
+    <div class="card">✔ HANDS-ON PRACTICAL TRAINING WITH REAL PROJECTS</div>
+    <div class="card">✔ STRONG PLACEMENT AND CAREER SUPPORT</div>
+    <div class="card">✔ MODERN INFRASTRUCTURE AND UPDATED CURRICULUM</div>
 </section>
 
-<!-- ABOUT -->
 <section id="about">
-  <div class="card">
-    <h2>About Us</h2>
-    <p>We provide top-quality education with practical learning.</p>
+    <h1>ABOUT US</h1>
+    <p>SKIPS INSTITUTE IS DEDICATED TO PROVIDING HIGH-QUALITY EDUCATION IN TECHNOLOGY AND INNOVATION.</p>
+    <p>WE FOCUS ON PRACTICAL LEARNING TO HELP STUDENTS BECOME INDUSTRY-READY AND CONFIDENT.</p>
 
-    <h3>Mission</h3>
-    <p>Empowering students with real-world skills.</p>
+    <h2>MISSION</h2>
+    <p>TO PROVIDE CAREER-ORIENTED EDUCATION WITH PRACTICAL SKILLS.</p>
 
-    <h3>Vision</h3>
-    <p>To be a leading institute in technology education.</p>
-  </div>
+    <h2>VISION</h2>
+    <p>TO BECOME A LEADING GLOBAL EDUCATION INSTITUTE.</p>
 </section>
 
-<!-- COURSES -->
 <section id="courses">
-  <div class="card">
-    <h2>Our Courses</h2>
-
-    <div class="courses">
-      <div class="course-box">Web Design</div>
-      <div class="course-box">Data Science</div>
-      <div class="course-box">Machine Learning and Artificial Intelligence</div>
-      <div class="course-box">Cyber Security</div>
-    </div>
-  </div>
+    <h1>OUR COURSES</h1>
+    <div class="card">🌐 WEB DEVELOPMENT (HTML, CSS, JAVASCRIPT)</div>
+    <div class="card">🤖 ARTIFICIAL INTELLIGENCE</div>
+    <div class="card">📊 DATA SCIENCE & ANALYTICS</div>
+    <div class="card">🎨 UI/UX DESIGN</div>
+    <div class="card">☁ CLOUD COMPUTING</div>
+    <div class="card">🔐 CYBERSECURITY</div>
+    <div class="card">📱 MOBILE APP DEVELOPMENT</div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="card">
-    <h2>Contact Us</h2>
+<section>
+    <h1>OUR FACULTY</h1>
+    <p>OUR FACULTY MEMBERS ARE INDUSTRY EXPERTS WITH YEARS OF EXPERIENCE IN TEACHING AND PRACTICAL DEVELOPMENT.</p>
+    <p>THEY PROVIDE PERSONAL GUIDANCE, MENTORSHIP, AND CAREER SUPPORT TO EVERY STUDENT.</p>
+</section>
 
-    <p>Email: jainjainam2209@gmail.com</p>
-    <p>Phone: +91 9724629434</p>
+<section>
+    <h1>STUDENT TESTIMONIALS</h1>
+    <p>⭐ "GREAT LEARNING EXPERIENCE WITH STRONG SUPPORT FROM FACULTY."</p>
+    <p>⭐ "HELPED ME BUILD REAL-WORLD PROJECT SKILLS AND CONFIDENCE."</p>
+    <p>⭐ "BEST INSTITUTE FOR PRACTICAL TECH EDUCATION."</p>
+</section>
+
+<section id="contact">
+    <h1>CONTACT US</h1>
 
     <form>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea rows="4" placeholder="Message"></textarea>
-      <button>Send Message</button>
+        <label>NAME:</label>
+        <input type="text">
+
+        <label>EMAIL:</label>
+        <input type="email">
+
+        <label>MESSAGE:</label>
+        <textarea></textarea><br><br>
+
+        <button type="submit">SUBMIT</button>
     </form>
-  </div>
+
+    <hr>
+
+    <h2>OUR CONTACT DETAILS</h2>
+    <p>
+        📞 +91 9724629434 <br>
+        📧 jainjainam2209@gmail.com <br>
+        📍 AHMEDABAD, GUJARAT
+    </p>
 </section>
 
 <footer>
-  <p>© 2026 My Institute | All Rights Reserved</p>
+    <p>© 2026 SKIPS INSTITUTE | ALL RIGHTS RESERVED</p>
 </footer>
 
 </body>
