@@ -1,181 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>SKIPS Institute</title>
-
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            margin: 0;
-            background: grey; 
-            color: black;
-        }
-
-        nav {
-            background: #0a0f1c;
-            padding: 15px;
-            text-align: center;
-            border-bottom: 2px solid #1e90ff;
-        }
-
-        nav a {
-            color: #ffffff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #1e90ff;
-        }
-
-        header {
-            background: linear-gradient(to right, #0f2a4d, #1e90ff);
-            color: white; /* improved visibility */
-            text-align: center;
-            padding: 70px 20px;
-        }
-
-        section {
-            background: rgba(255, 255, 255, 0.7); /* lighter for grey bg */
-            margin: 25px;
-            padding: 30px;
-            border-radius: 10px;
-            border: 1px solid #1e90ff;
-        }
-
-        h1, h2, p, li, label {
-            font-weight: bold;
-        }
-
-        h1, h2 {
-            color: #1e90ff;
-        }
-
-        .card {
-            background: rgba(30, 144, 255, 0.15);
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 8px;
-            border-left: 4px solid #1e90ff;
-        }
-
-        footer {
-            background: #0a0f1c;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            border-top: 2px solid #1e90ff;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            font-weight: bold;
-        }
-
-        button {
-            background: #1e90ff;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-        }
-
-        button:hover {
-            background: #0f5fbf;
-        }
-    </style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skips Institute</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav>
-    <a href="#home">HOME</a>
-    <a href="#about">ABOUT</a>
-    <a href="#courses">COURSES</a>
-    <a href="#contact">CONTACT</a>
+<div class="logo">Skips</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 </nav>
 
-<header id="home">
-    <h1>SKIPS INSTITUTE</h1>
-    <p>EMPOWERING STUDENTS WITH SKILLS FOR THE FUTURE 🚀</p>
+<header>
+<h1>Welcome To Skips Institute</h1>
+<p>Learn Future Skills With Expert Mentors, Live Projects & Career Guidance.</p>
+<p>India's trusted destination for Web Development, AI, Data Science & IT Courses.</p>
+<a href="courses.html" class="btn">Explore Courses</a>
 </header>
 
 <section>
-    <h2>WHY CHOOSE BRIGHTPATH?</h2>
-    <div class="card">✔ EXPERIENCED FACULTY WITH DEEP INDUSTRY KNOWLEDGE</div>
-    <div class="card">✔ HANDS-ON PRACTICAL TRAINING WITH REAL PROJECTS</div>
-    <div class="card">✔ STRONG PLACEMENT AND CAREER SUPPORT</div>
-    <div class="card">✔ MODERN INFRASTRUCTURE AND UPDATED CURRICULUM</div>
-</section>
+<h2>Why Choose Us?</h2>
 
-<section id="about">
-    <h1>ABOUT US</h1>
-    <p>SKIPS INSTITUTE IS DEDICATED TO PROVIDING HIGH-QUALITY EDUCATION IN TECHNOLOGY AND INNOVATION.</p>
-    <p>WE FOCUS ON PRACTICAL LEARNING TO HELP STUDENTS BECOME INDUSTRY-READY AND CONFIDENT.</p>
+<div class="grid">
+<div class="card">✔ Experienced Faculty</div>
+<div class="card">✔ Live Practical Training</div>
+<div class="card">✔ Placement Support</div>
+<div class="card">✔ Modern Computer Labs</div>
+<div class="card">✔ Affordable Fees</div>
+<div class="card">✔ Industry Based Projects</div>
+</div>
 
-    <h2>MISSION</h2>
-    <p>TO PROVIDE CAREER-ORIENTED EDUCATION WITH PRACTICAL SKILLS.</p>
-
-    <h2>VISION</h2>
-    <p>TO BECOME A LEADING GLOBAL EDUCATION INSTITUTE.</p>
-</section>
-
-<section id="courses">
-    <h1>OUR COURSES</h1>
-    <div class="card">🌐 WEB DEVELOPMENT (HTML, CSS, JAVASCRIPT)</div>
-    <div class="card">🤖 ARTIFICIAL INTELLIGENCE</div>
-    <div class="card">📊 DATA SCIENCE & ANALYTICS</div>
-    <div class="card">🎨 UI/UX DESIGN</div>
-    <div class="card">☁ CLOUD COMPUTING</div>
-    <div class="card">🔐 CYBERSECURITY</div>
-    <div class="card">📱 MOBILE APP DEVELOPMENT</div>
-</section>
-
-<section>
-    <h1>OUR FACULTY</h1>
-    <p>OUR FACULTY MEMBERS ARE INDUSTRY EXPERTS WITH YEARS OF EXPERIENCE IN TEACHING AND PRACTICAL DEVELOPMENT.</p>
-    <p>THEY PROVIDE PERSONAL GUIDANCE, MENTORSHIP, AND CAREER SUPPORT TO EVERY STUDENT.</p>
-</section>
-
-<section>
-    <h1>STUDENT TESTIMONIALS</h1>
-    <p>⭐ "GREAT LEARNING EXPERIENCE WITH STRONG SUPPORT FROM FACULTY."</p>
-    <p>⭐ "HELPED ME BUILD REAL-WORLD PROJECT SKILLS AND CONFIDENCE."</p>
-    <p>⭐ "BEST INSTITUTE FOR PRACTICAL TECH EDUCATION."</p>
-</section>
-
-<section id="contact">
-    <h1>CONTACT US</h1>
-
-    <form>
-        <label>NAME:</label>
-        <input type="text">
-
-        <label>EMAIL:</label>
-        <input type="email">
-
-        <label>MESSAGE:</label>
-        <textarea></textarea><br><br>
-
-        <button type="submit">SUBMIT</button>
-    </form>
-
-    <hr>
-
-    <h2>OUR CONTACT DETAILS</h2>
-    <p>
-        📞 +91 9724629434 <br>
-        📧 jainjainam2209@gmail.com <br>
-        📍 AHMEDABAD, GUJARAT
-    </p>
 </section>
 
 <footer>
-    <p>© 2026 SKIPS INSTITUTE | ALL RIGHTS RESERVED</p>
+© 2026 Skips Institute
 </footer>
 
 </body>
